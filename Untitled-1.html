@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GraZSE</title>
+    <style>
+        body {
+          background-color: black;
+          color: white;
+          font-family: Arial, sans-serif;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+        }
+   
+        h1 {
+          font-size: 2rem;
+          text-align: center;
+          color: white;
+          text-shadow: 2px 2px red, -2px -2px green;
+          margin-bottom: 20px;
+        }
+   
+        .zse-container {
+          display: grid;
+          grid-template-columns: repeat(2, 100px);
+          grid-template-rows: repeat(2, 100px);
+          gap: 10px;
+        }
+   
+        .grid div {
+          width: 100px;
+          height: 100px;
+          border-radius: 10px;
+        }
+   
+        .zse-kwadrat-green {
+          background-color: green;
+        }
+   
+        .zse-kwadrat-red {
+          background-color: red;
+        }
+   
+        .zse-kwadrat-yellow {
+          background-color: yellow;
+        }
+   
+        .zse-kwadrat-blue {
+          background-color: blue;
+        }
+      </style>
+</head>
+<body>
+    <h1 id="game-header">Witamy w ZSE grze</h1>
+   
+    <div class="zse-container">
+        <div  class="zse-kwadrat-green" id="green"></div>
+        <div class="zse-kwadrat-red" id="red"></div>
+        <div class="zse-kwadrat-yellow" id="yellow"></div>
+        <div class="zse-kwadrat-blue" id="blue"></div>
+    </div>
+   
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"> </script>
+    <script src="Untitled-2.js"></script>
+</body>
+</html>
